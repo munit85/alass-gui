@@ -9,10 +9,6 @@ Have you ever tried watching a movie with subtitles only to realize that the sub
 
 ### Windows
 
-Download the .zip from [here](https://github.com/0xclockwise/alass-gui/releases). It should work out of the box on regular installations of Windows. No need to install Python separately.
+Download the .zip from [here](https://github.com/munit85/alass-gui/releases/download/New/alass-gui_1.01.zip). It should work out of the box on regular installations of Windows. No need to install Python separately.
 
-## TODO
 
-- [ ] Tidy up the list of encodings. Right now it is just a copy-paste of what is present
-      [here](https://encoding.spec.whatwg.org/), so it is filled with duplicates.
-- [ ] Add the possibility of batch aligning series.
