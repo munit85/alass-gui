@@ -11,9 +11,10 @@ import sys
 import webbrowser
 
 filetypes = [('Subtitle file', '*.srt *.ass *.ssa *.idx *.sub')]
+videotypes = [('Video file', '*.avi *.mkv *.mp4 *.m4a')]
 
 def set_ref_file():
-    path = filedialog.askopenfilename(filetypes=filetypes)
+    path = filedialog.askopenfilename(filetypes=videotypes)
     if path != '':
         ref_file.set(path)
 
@@ -59,7 +60,7 @@ def run():
 
     # cmd.exe
     if term.get() == 'cmd.exe':
-        p = subprocess.Popen([term.get(), '/K', f'.\\alass-windows64\\bin\\alass-cli {ref_file.get()} {inc_file.get()} {out_file.get()}'])
+        p = subprocess.Popen([term.get(), '/K', f'.\\alass-cli {ref_file.get()} {inc_file.get()} {out_file.get()}'])
         return
     # gnome-terminal
     if term.get() == 'gnome-terminal':
